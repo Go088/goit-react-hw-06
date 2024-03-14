@@ -10,12 +10,12 @@ const contactsSlice = createSlice({
     addContacts(state, action) {
       state.items.push({
         id: nanoid(),
-        name: action.payload.name,
-        number: action.payload.number,
+        name: action.payload.value.name,
+        number: action.payload.value.number,
       });
     },
     deleteContacts(state, action) {
-      state.contacts = state.contacts.filter(
+      state.items = state.items.filter(
         (contact) => contact.id !== action.payload.id
       );
     },
