@@ -10,8 +10,8 @@ const slice = createSlice({
     addContacts(state, action) {
       state.items.push({
         id: nanoid(),
-        name: action.payload.value.name,
-        number: action.payload.value.number,
+        name: action.payload.name,
+        number: action.payload.number,
       });
     },
     deleteContacts(state, action) {
