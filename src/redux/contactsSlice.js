@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { nanoid } from "nanoid";
 
-const contactsSlice = createSlice({
+const slice = createSlice({
   name: "contacts",
   initialState: {
     items: [],
@@ -22,6 +22,6 @@ const contactsSlice = createSlice({
   },
 });
 
-export const { addContacts, deleteContacts } = contactsSlice.actions;
+export const { addContacts, deleteContacts } = slice.actions;
 
-export const contactsReducer = contactsSlice.reducer;
+export default slice.reducer;
