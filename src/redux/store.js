@@ -14,7 +14,7 @@ import {
 } from "redux-persist";
 
 const persistConfig = {
-  key: "root",
+  key: "contacts",
   storage,
 };
 
